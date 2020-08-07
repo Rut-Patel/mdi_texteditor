@@ -47,7 +47,6 @@ Partial Class frmTextEditor
         Me.mnuWindowsTileVertical = New System.Windows.Forms.ToolStripMenuItem()
         Me.mnuWindowsTileHorizontal = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripSeparator3 = New System.Windows.Forms.ToolStripSeparator()
-        Me.SaveFileDailogFileNameToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.mnuHelp = New System.Windows.Forms.ToolStripMenuItem()
         Me.mnuHelpAbout = New System.Windows.Forms.ToolStripMenuItem()
         Me.StatusStrip = New System.Windows.Forms.StatusStrip()
@@ -191,7 +190,7 @@ Partial Class frmTextEditor
         Me.mnuEditCut.Image = CType(resources.GetObject("mnuEditCut.Image"), System.Drawing.Image)
         Me.mnuEditCut.Name = "mnuEditCut"
         Me.mnuEditCut.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.X), System.Windows.Forms.Keys)
-        Me.mnuEditCut.Size = New System.Drawing.Size(144, 22)
+        Me.mnuEditCut.Size = New System.Drawing.Size(180, 22)
         Me.mnuEditCut.Text = "&Cut"
         Me.mnuEditCut.ToolTipText = "Cut the Selected text"
         '
@@ -200,7 +199,7 @@ Partial Class frmTextEditor
         Me.mnuEditCopy.Image = CType(resources.GetObject("mnuEditCopy.Image"), System.Drawing.Image)
         Me.mnuEditCopy.Name = "mnuEditCopy"
         Me.mnuEditCopy.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.C), System.Windows.Forms.Keys)
-        Me.mnuEditCopy.Size = New System.Drawing.Size(144, 22)
+        Me.mnuEditCopy.Size = New System.Drawing.Size(180, 22)
         Me.mnuEditCopy.Text = "C&opy"
         Me.mnuEditCopy.ToolTipText = "Copy Your selected text"
         '
@@ -209,13 +208,13 @@ Partial Class frmTextEditor
         Me.mnuEditPaste.Image = CType(resources.GetObject("mnuEditPaste.Image"), System.Drawing.Image)
         Me.mnuEditPaste.Name = "mnuEditPaste"
         Me.mnuEditPaste.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.V), System.Windows.Forms.Keys)
-        Me.mnuEditPaste.Size = New System.Drawing.Size(144, 22)
+        Me.mnuEditPaste.Size = New System.Drawing.Size(180, 22)
         Me.mnuEditPaste.Text = "&Paste"
         Me.mnuEditPaste.ToolTipText = "Paste the text into the File."
         '
         'mnuWindows
         '
-        Me.mnuWindows.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mnuWindowsCascade, Me.mnuWindowsTileVertical, Me.mnuWindowsTileHorizontal, Me.ToolStripSeparator3, Me.SaveFileDailogFileNameToolStripMenuItem})
+        Me.mnuWindows.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mnuWindowsCascade, Me.mnuWindowsTileVertical, Me.mnuWindowsTileHorizontal, Me.ToolStripSeparator3})
         Me.mnuWindows.Name = "mnuWindows"
         Me.mnuWindows.Size = New System.Drawing.Size(68, 20)
         Me.mnuWindows.Text = "&Windows"
@@ -224,34 +223,28 @@ Partial Class frmTextEditor
         'mnuWindowsCascade
         '
         Me.mnuWindowsCascade.Name = "mnuWindowsCascade"
-        Me.mnuWindowsCascade.Size = New System.Drawing.Size(203, 22)
+        Me.mnuWindowsCascade.Size = New System.Drawing.Size(180, 22)
         Me.mnuWindowsCascade.Text = "&Cascade"
         Me.mnuWindowsCascade.ToolTipText = "Cascade the opened windows"
         '
         'mnuWindowsTileVertical
         '
         Me.mnuWindowsTileVertical.Name = "mnuWindowsTileVertical"
-        Me.mnuWindowsTileVertical.Size = New System.Drawing.Size(203, 22)
+        Me.mnuWindowsTileVertical.Size = New System.Drawing.Size(180, 22)
         Me.mnuWindowsTileVertical.Text = "Tile &Vertical"
         Me.mnuWindowsTileVertical.ToolTipText = "Cascade windows vertically"
         '
         'mnuWindowsTileHorizontal
         '
         Me.mnuWindowsTileHorizontal.Name = "mnuWindowsTileHorizontal"
-        Me.mnuWindowsTileHorizontal.Size = New System.Drawing.Size(203, 22)
+        Me.mnuWindowsTileHorizontal.Size = New System.Drawing.Size(180, 22)
         Me.mnuWindowsTileHorizontal.Text = "Tile &Horizontal "
         Me.mnuWindowsTileHorizontal.ToolTipText = "Cascade window horizontally"
         '
         'ToolStripSeparator3
         '
         Me.ToolStripSeparator3.Name = "ToolStripSeparator3"
-        Me.ToolStripSeparator3.Size = New System.Drawing.Size(200, 6)
-        '
-        'SaveFileDailogFileNameToolStripMenuItem
-        '
-        Me.SaveFileDailogFileNameToolStripMenuItem.Name = "SaveFileDailogFileNameToolStripMenuItem"
-        Me.SaveFileDailogFileNameToolStripMenuItem.Size = New System.Drawing.Size(203, 22)
-        Me.SaveFileDailogFileNameToolStripMenuItem.Text = "SaveFileDailog.FileName"
+        Me.ToolStripSeparator3.Size = New System.Drawing.Size(177, 6)
         '
         'mnuHelp
         '
@@ -343,7 +336,6 @@ Partial Class frmTextEditor
     Friend WithEvents ToolStripButtonNew As ToolStripButton
     Friend WithEvents ToolStripButtonOpen As ToolStripButton
     Friend WithEvents ToolStripButtonSave As ToolStripButton
-    Friend WithEvents SaveFileDailogFileNameToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents lblStripStatus As ToolStripStatusLabel
     Friend WithEvents ToolTipNotepad As ToolTip
 End Class
